@@ -41,53 +41,29 @@ class ManageUsuario {
     function edit(Usuario $usuario) {
         $resultado = 0;
         if($this->db->connect()) {
-            $sql = 'update usuario set nombre = :nombre';
-            if($this->db->execute($sql, $producto->get())) {
+            $sql = 'update usuario set correo = :correo, alias = :alias, nombre = :nombre, clave = :clave, activo = :activo, fechaAlta = :fechaAlta where id = :id';
+            if($this->db->execute($sql, $usuario->get())) {
                 $resultado = $this->db->getSentence()->rowCount();
             }
         }
         return $resultado;
     }
-
-    function get($id) {
-        $producto = null;
-        if($this->db->connect()) {
-            $sql = 'select * from producto where id = :id';
-            $array = array('id' => $id);
-            if($this->db->execute($sql, $array)) {
-                if($fila = $this->db->getSentence()->fetch()) {
-                    $producto = new Producto();
-                    $producto->set($fila);
-                }
-            }
-        }
-        return $producto;
-    }
-
-    function getAll() {
-        $array = array();
-        if($this->db->connect()) {
-            $sql = 'select * from producto order by nombre';
-            if($this->db->execute($sql)) {
-                while($fila = $this->db->getSentence()->fetch()) {
-                    $producto = new Producto();
-                    $producto->set($fila);
-                    $array[] = $producto;
-                }
-            }
-        }
-        return $array;
-    }
+    
+//Delete
 
     function remove($id) {
         $resultado = 0;
         if($this->db->connect()) {
-            $sql = 'delete from producto where id = :id';
-            $array = array('id' => $id);
-            if($this->db->execute($sql, $array)) {
+            $sql = 'delete from usuario where id = :id';
+            $params = array(
+                'id' => $id
+            );
+            // echo 'entro';
+            if($this->db->execute($sql, $params)) {
                 $resultado = $this->db->getSentence()->rowCount();
             }
         }
         return $resultado;
     }
+
 }
