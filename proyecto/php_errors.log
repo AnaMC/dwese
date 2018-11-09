@@ -60,3 +60,14 @@ Stack trace:
 #1 {main}
   thrown in /home/ubuntu/workspace/proyecto/classes/izv/managedata/ManageProducto.php on line 49
 [30-Oct-2018 09:59:50 UTC] PHP Notice:  Undefined variable: resultado in /home/ubuntu/workspace/proyecto/producto/dodelete.php on line 24
+[06-Nov-2018 14:36:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on null in /home/ubuntu/workspace/proyecto/producto/dodelete.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/producto/dodelete.php on line 24
+[06-Nov-2018 14:42:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on null in /home/ubuntu/workspace/proyecto/producto/dodelete.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/producto/dodelete.php on line 24
+[08-Nov-2018 08:27:46 UTC] PHP Fatal error:  Call to a member function errorInfo() on a non-object in /home/ubuntu/workspace/proyecto/usuario/doinsert.php on line 22
+[08-Nov-2018 08:27:46 UTC] PHP Stack trace:
+[08-Nov-2018 08:27:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/proyecto/usuario/doinsert.php:0

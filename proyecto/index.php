@@ -21,6 +21,9 @@
                         <a class="nav-link" href="producto/">Producto</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="usuario/">Usuario</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link disabled" href="#">Disabled</a>
                     </li>
                     <li class="nav-item dropdown">

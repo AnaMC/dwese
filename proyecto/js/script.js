@@ -3,6 +3,7 @@
 
     var btConfirmDelete = document.getElementById('btConfirmDelete');
     var checkAll = document.getElementById('checkAll');
+    var checkDesenmascarar = document.getElementById('desenmascarar');
     var fBorrar = document.getElementById('fBorrar');
     var tabla = document.getElementById('tablaProducto');
 
@@ -21,6 +22,10 @@
         checkAll.addEventListener('click', checkTable);
     }
     
+    if(checkDesenmascarar) {
+        checkDesenmascarar.addEventListener('click', desenmascarar);
+    }
+
     if(tabla) {
         tabla.addEventListener('click', clickTable);
     }
@@ -49,6 +54,15 @@
     function confirmDelete(event) {
         if(!confirm('¿De verdad?')) {
             event.preventDefault();
+        }
+    }
+    
+    function desenmascarar() {
+        var clave = document.getElementById('clave');
+        if(checkDesenmascarar.checked) {
+            clave.setAttribute('type', 'text');
+        } else {
+            clave.setAttribute('type', 'password');
         }
     }
 

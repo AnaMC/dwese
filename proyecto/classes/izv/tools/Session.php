@@ -1,5 +1,7 @@
 <?php
 
+namespace izv\tools;
+
 class Session {
 
     const USER = '__user';

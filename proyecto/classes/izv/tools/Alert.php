@@ -7,18 +7,30 @@ class Alert {
     private $operacion, $resultado;
     
     static private $mensajes = array(
-        'insertproducto' => array(
-            'No se ha podido insertar el producto.',
-            'El producto se ha insertado correctamente.'
+        'delete' => array(
+            'No se ha podido borrar.',
+            'Se ha borrado correctamente.'
         ),
         'deleteproducto' => array(
             'No se ha podido borrar el producto.',
             'El producto se ha borrado correctamente.'
         ),
+        'edit'   => array(
+            'No se ha podido modificar.',
+            'Se ha modificado correctamente.'
+        ),
         'editproducto'   => array(
             'No se ha podido modificar el producto.',
             'El producto se ha modificado correctamente.'
-        )
+        ),
+        'insert' => array(
+            'No se ha podido insertar.',
+            'Se ha insertado correctamente.'
+        ),
+        'insertproducto' => array(
+            'No se ha podido insertar el producto.',
+            'El producto se ha insertado correctamente.'
+        ),
     );
     
     static private $clases = array('alert-danger', 'alert-success');
