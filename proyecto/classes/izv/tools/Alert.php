@@ -31,6 +31,11 @@ class Alert {
             'No se ha podido insertar el producto.',
             'El producto se ha insertado correctamente.'
         ),
+        'login' => array(
+            'No se ha autentificado correctamente.',
+            'Logueado correctamente.'
+        )
+        
     );
     
     static private $clases = array('alert-danger', 'alert-success');

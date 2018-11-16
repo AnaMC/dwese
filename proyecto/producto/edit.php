@@ -7,6 +7,15 @@ use izv\tools\Reader;
 
 require '../classes/autoload.php';
 
+//Al inicio de cada pagina de producto se pone un acomprobación de sesión, de modo que si está
+//logeado se le muestra la página y si no, se le devuelve al index.
+
+$sesion = new Session(App::SESSION_NAME);
+if(!$sesion->isLogged()) {
+    header('Location: ..');
+    exit();
+}
+
 //1º comprobar si puedo hacer esta operación
 //2º validar los datos
 $id = Reader::read('id');

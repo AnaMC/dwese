@@ -1,3 +1,14 @@
+<?php
+require 'classes/autoload.php';
+
+use izv\app\App;
+use izv\tools\Alert;
+use izv\tools\Reader;
+use izv\tools\Session;
+
+$sesion = new Session(App::SESSION_NAME);
+
+?>
 <!doctype html>
 <html>
     <head>
@@ -7,6 +18,31 @@
         <link rel="stylesheet" href="css/style.css" >
     </head>
     <body>
+        <!-- modal -->
+        <div class="modal fade" id="modallogin" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="cliente/dologin.php" method="post" id="fLogin">
+                            <input class="form-control" type="email" name="correo" id="correo" required placeholder="Correo electrónico"/>
+                            <br>
+                            <input class="form-control" type="password" name="clave" id="clave" required placeholder="Clave de acceso"/>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" form="fLogin" class="btn btn-primary" id="btLogin">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin modal -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <a class="navbar-brand" href="./">dwes</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,6 +58,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="usuario/">Usuario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cliente/">Registro</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Disabled</a>
@@ -46,7 +85,20 @@
                 <div class="container">
                     <h1 class="display-3">Hello, world!</h1>
                     <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+                    <p>
+                        <a data-toggle="modal" data-target="#modallogin" class="btn btn-primary btn-lg" href="#" role="button">Login &raquo;</a>
+                        <?php
+                        if($sesion->isLogged()) {
+                            ?>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Editar &raquo;</a>
+                            <?php
+                        }
+                        ?>
+                    </p>
+                    <?php
+                    $alert = Alert::getMessage(Reader::get('op'), Reader::get('resultado'));
+                    echo $alert;
+                    ?>
                 </div>
             </div>
             <div class="container">

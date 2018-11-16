@@ -91,4 +91,29 @@ class ManageUsuario {
         }
         return $resultado;
     }
+    
+      /**
+     * Metodo login al que le pasamos correo y clave, este metodo devolverá true  o false, a través del correo que le pasamos se puede decir si se hace el login o no.
+     * Devuelve al usuario si hace login, false si no.
+     * Ver en dologin.php
+     */
+     //Al inicio de cada pagina de producto se pone un acomprobación de sesión, de modo que si está logeado se le muestra la página y si no, se le devuelve al index.
+    function login($correo, $clave) {
+          if($this->db->connect()) {
+            $sql = 'select * from usuario where correo = :correo and activo = 1';
+            $array = array('correo' => $correo);
+            if($this->db->execute($sql, $array)) {
+                if($fila = $this->db->getSentence()->fetch()) {
+                    $usuario = new Usuario();
+                    $usuario->set($fila);
+                    $resultado = \izv\tools\Util::verificarClave($clave, $usuario->getClave());
+                    if($resultado) {
+                        return $usuario;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+    
 }

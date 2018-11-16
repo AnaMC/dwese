@@ -6,6 +6,15 @@ use izv\managedata\ManageProducto;
 use izv\tools\Reader;
 use izv\tools\Util;
 
+//Al inicio de cada pagina de producto se pone un acomprobación de sesión, de modo que si está
+//logeado se le muestra la página y si no, se le devuelve al index.
+
+$sesion = new Session(App::SESSION_NAME);
+if(!$sesion->isLogged()) {
+    header('Location: ..');
+    exit();
+}
+
 require '../classes/autoload.php';
 
 $db = new Database();

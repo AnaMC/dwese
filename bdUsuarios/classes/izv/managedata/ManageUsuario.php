@@ -65,5 +65,5 @@ class ManageUsuario {
         }
         return $resultado;
     }
-
+    
 }
