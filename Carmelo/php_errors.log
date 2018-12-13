@@ -1,0 +1,143 @@
+[25-Oct-2018 07:02:13 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\App' not found in /home/ubuntu/workspace/proyecto/classes/izv/database/Database.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/producto/index.php(8): izv\database\Database->__construct()
+#1 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/database/Database.php on line 23
+[25-Oct-2018 07:02:21 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\App' not found in /home/ubuntu/workspace/proyecto/classes/izv/database/Database.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/producto/index.php(8): izv\database\Database->__construct()
+#1 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/database/Database.php on line 23
+[25-Oct-2018 07:07:24 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\PDO' not found in /home/ubuntu/workspace/proyecto/classes/izv/database/Database.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/producto/index.php(10): izv\database\Database->connect()
+#1 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/database/Database.php on line 36
+[25-Oct-2018 07:08:09 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\PDO' not found in /home/ubuntu/workspace/proyecto/classes/izv/database/Database.php:41
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/producto/index.php(10): izv\database\Database->connect()
+#1 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/database/Database.php on line 41
+[25-Oct-2018 07:08:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Reader' not found in /home/ubuntu/workspace/proyecto/producto/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/producto/index.php on line 17
+[25-Oct-2018 07:13:24 UTC] PHP Notice:  Undefined variable: sentencia in /home/ubuntu/workspace/proyecto/producto/index.php on line 73
+[25-Oct-2018 07:13:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in /home/ubuntu/workspace/proyecto/producto/index.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/producto/index.php on line 73
+[25-Oct-2018 07:13:30 UTC] PHP Notice:  Undefined variable: sentencia in /home/ubuntu/workspace/proyecto/producto/index.php on line 73
+[25-Oct-2018 07:13:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in /home/ubuntu/workspace/proyecto/producto/index.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/producto/index.php on line 73
+[25-Oct-2018 07:14:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Producto' not found in /home/ubuntu/workspace/proyecto/producto/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/producto/index.php on line 75
+[25-Oct-2018 08:16:17 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to izv\managedata\ManageProducto::__construct() must be an instance of izv\managedata\Database, instance of izv\database\Database given, called in /home/ubuntu/workspace/proyecto/producto/index.php on line 11 and defined in /home/ubuntu/workspace/proyecto/classes/izv/managedata/ManageProducto.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/producto/index.php(11): izv\managedata\ManageProducto->__construct(Object(izv\database\Database))
+#1 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/managedata/ManageProducto.php on line 9
+[25-Oct-2018 08:17:56 UTC] PHP Notice:  Undefined property: izv\managedata\ManageProducto::$bd in /home/ubuntu/workspace/proyecto/classes/izv/managedata/ManageProducto.php on line 63
+[25-Oct-2018 08:17:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getSentence() on null in /home/ubuntu/workspace/proyecto/classes/izv/managedata/ManageProducto.php:63
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/producto/index.php(12): izv\managedata\ManageProducto->getAll()
+#1 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/managedata/ManageProducto.php on line 63
+[25-Oct-2018 19:23:17 UTC] PHP Parse error:  syntax error, unexpected '';' (T_CONSTANT_ENCAPSED_STRING), expecting ';' in /home/ubuntu/workspace/proyecto/classes/izv/tools/Util.php on line 22
+[25-Oct-2018 19:24:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method izv\tools\Util::getAlert() in /home/ubuntu/workspace/proyecto/classes/izv/tools/Util.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/producto/index.php(76): izv\tools\Util::dangerAlert('Error')
+#1 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/tools/Util.php on line 14
+[30-Oct-2018 09:36:06 UTC] PHP Notice:  Undefined property: izv\managedata\ManageProducto::$bd in /home/ubuntu/workspace/proyecto/classes/izv/managedata/ManageProducto.php on line 49
+[30-Oct-2018 09:36:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getSentence() on null in /home/ubuntu/workspace/proyecto/classes/izv/managedata/ManageProducto.php:49
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/producto/edit.php(13): izv\managedata\ManageProducto->get('2')
+#1 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/managedata/ManageProducto.php on line 49
+[30-Oct-2018 09:59:50 UTC] PHP Notice:  Undefined variable: resultado in /home/ubuntu/workspace/proyecto/producto/dodelete.php on line 24
+[06-Nov-2018 14:36:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on null in /home/ubuntu/workspace/proyecto/producto/dodelete.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/producto/dodelete.php on line 24
+[06-Nov-2018 14:42:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on null in /home/ubuntu/workspace/proyecto/producto/dodelete.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/producto/dodelete.php on line 24
+[08-Nov-2018 08:13:49 UTC] PHP Parse error:  syntax error, unexpected '/', expecting end of file in /home/ubuntu/workspace/proyecto/usuario/doinsert.php on line 22
+[08-Nov-2018 08:27:14 UTC] PHP Parse error:  syntax error, unexpected 'usuario' (T_STRING), expecting ',' or ')' in /home/ubuntu/workspace/proyecto/usuario/edit.php on line 28
+[08-Nov-2018 08:53:53 UTC] PHP Notice:  Undefined variable: result in /home/ubuntu/workspace/proyecto/classes/izv/tools/Render.php on line 32
+[09-Nov-2018 10:10:40 UTC] PHP Warning:  require_once(vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/proyecto/gmail/solicitartoken.php on line 4
+[09-Nov-2018 10:10:40 UTC] PHP Fatal error:  require_once(): Failed opening required 'vendor/autoload.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/proyecto/gmail/solicitartoken.php on line 4
+[09-Nov-2018 11:39:44 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /home/ubuntu/workspace/proyecto/classes/izv/tools/Mail.php on line 52
+[09-Nov-2018 11:44:02 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\tools\Google_Client' not found in /home/ubuntu/workspace/proyecto/classes/izv/tools/Mail.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/classes/izv/tools/Mail.php(21): izv\tools\Mail::sendMail('superwave1999@g...', 'Correo de activ...', 'Correo de activ...')
+#1 /home/ubuntu/workspace/proyecto/cliente/doinsert.php(27): izv\tools\Mail::sendActivation(Object(izv\data\Usuario))
+#2 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/tools/Mail.php on line 27
+[09-Nov-2018 11:45:17 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/proyecto/cliente/doinsert.php on line 13
+[09-Nov-2018 11:45:42 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\tools\Google_Client' not found in /home/ubuntu/workspace/proyecto/classes/izv/tools/Mail.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/classes/izv/tools/Mail.php(21): izv\tools\Mail::sendMail('superwave1999@g...', 'Correo de activ...', 'Correo de activ...')
+#1 /home/ubuntu/workspace/proyecto/cliente/doinsert.php(28): izv\tools\Mail::sendActivation(Object(izv\data\Usuario))
+#2 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/tools/Mail.php on line 27
+[09-Nov-2018 11:46:59 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\tools\PHPMailer\PHPMailer\PHPMailer' not found in /home/ubuntu/workspace/proyecto/classes/izv/tools/Mail.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/classes/izv/tools/Mail.php(21): izv\tools\Mail::sendMail('superwave1999@g...', 'Correo de activ...', 'Correo de activ...')
+#1 /home/ubuntu/workspace/proyecto/cliente/doinsert.php(28): izv\tools\Mail::sendActivation(Object(izv\data\Usuario))
+#2 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/tools/Mail.php on line 37
+[09-Nov-2018 11:47:26 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\tools\PHPMailer\PHPMailer\PHPMailer' not found in /home/ubuntu/workspace/proyecto/classes/izv/tools/Mail.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/classes/izv/tools/Mail.php(21): izv\tools\Mail::sendMail('superwave1999@g...', 'Correo de activ...', 'Correo de activ...')
+#1 /home/ubuntu/workspace/proyecto/cliente/doinsert.php(28): izv\tools\Mail::sendActivation(Object(izv\data\Usuario))
+#2 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/tools/Mail.php on line 37
+[11-Nov-2018 19:38:32 UTC] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/ubuntu/workspace/proyecto/cliente/doactivar.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/cliente/doactivar.php on line 16
+[13-Nov-2018 20:37:35 UTC] PHP Notice:  Undefined variable: alert in /home/ubuntu/workspace/proyecto/cliente/index.php on line 63
+[15-Nov-2018 08:35:11 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\managedata\Util' not found in /home/ubuntu/workspace/proyecto/classes/izv/managedata/ManageUsuario.php:97
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/cliente/dologin.php(17): izv\managedata\ManageUsuario->login('damcurso1819@gm...', 'dam')
+#1 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/managedata/ManageUsuario.php on line 97
+[15-Nov-2018 08:35:43 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\managedata\izv\tools\Util' not found in /home/ubuntu/workspace/proyecto/classes/izv/managedata/ManageUsuario.php:97
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/cliente/dologin.php(17): izv\managedata\ManageUsuario->login('damcurso1819@gm...', 'dam')
+#1 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/managedata/ManageUsuario.php on line 97
+[15-Nov-2018 08:35:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Session' not found in /home/ubuntu/workspace/proyecto/cliente/dologin.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/cliente/dologin.php on line 20
+[15-Nov-2018 08:36:23 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to izv\tools\Session::login() must be an instance of izv\tools\izv\data\Usuario, instance of izv\data\Usuario given, called in /home/ubuntu/workspace/proyecto/cliente/dologin.php on line 22 and defined in /home/ubuntu/workspace/proyecto/classes/izv/tools/Session.php:49
+Stack trace:
+#0 /home/ubuntu/workspace/proyecto/cliente/dologin.php(22): izv\tools\Session->login(Object(izv\data\Usuario))
+#1 {main}
+  thrown in /home/ubuntu/workspace/proyecto/classes/izv/tools/Session.php on line 49
+[15-Nov-2018 08:45:09 UTC] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/ubuntu/workspace/proyecto/producto/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/producto/index.php on line 13
+[23-Nov-2018 16:40:00 UTC] PHP Fatal error:  Class 'Session' not found in /home/ubuntu/workspace/Carmelo/usuario/index.php on line 12
+[23-Nov-2018 16:40:00 UTC] PHP Stack trace:
+[23-Nov-2018 16:40:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/Carmelo/usuario/index.php:0
+[23-Nov-2018 16:41:16 UTC] PHP Fatal error:  Class 'App' not found in /home/ubuntu/workspace/Carmelo/usuario/index.php on line 13
+[23-Nov-2018 16:41:16 UTC] PHP Stack trace:
+[23-Nov-2018 16:41:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/Carmelo/usuario/index.php:0
+[23-Nov-2018 16:53:29 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/Carmelo/cliente/dologin.php on line 22
+[23-Nov-2018 16:54:36 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/Carmelo/cliente/dologin.php on line 22
+[23-Nov-2018 16:58:13 UTC] PHP Fatal error:  Call to a member function errorInfo() on a non-object in /home/ubuntu/workspace/Carmelo/classes/izv/database/Database.php on line 48
+[23-Nov-2018 16:58:13 UTC] PHP Stack trace:
+[23-Nov-2018 16:58:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/Carmelo/cliente/dologin.php:0
+[23-Nov-2018 16:58:13 UTC] PHP   2. izv\managedata\ManageUsuario->login() /home/ubuntu/workspace/Carmelo/cliente/dologin.php:18
+[23-Nov-2018 16:58:13 UTC] PHP   3. izv\database\Database->connect() /home/ubuntu/workspace/Carmelo/classes/izv/managedata/ManageUsuario.php:91
+[23-Nov-2018 17:03:42 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/Carmelo/usuario/doinsert.php on line 22
